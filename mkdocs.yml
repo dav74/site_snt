@@ -6,6 +6,7 @@ theme:
   palette:
     primary: black
 markdown_extensions:
+  - attr_list
   - pymdownx.highlight:
       use_pygments: true
   - pymdownx.superfences
@@ -19,6 +20,6 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 nav:
   - 'Séquence 1 : Internet (I)':
-    - 'Activité 1 : introduction': 'a1_1.md'
-    - 'Résumé 1': 'r1_1.md'
+    - 'Activité 1 : introduction': 'a1.md'
+    - 'Résumé 1': 'r1.md'
   
