@@ -22,4 +22,32 @@ nav:
   - 'Séquence 1 : Internet (I)':
     - 'Activité 1 : introduction': 'a1.md'
     - 'Résumé 1': 'r1.md'
-  
+    - 'Activité 2 : protocole TCP/IP': 'a2.md'
+    - 'Résumé 2': 'r2.md'
+    - 'Activité 3 : routage des paquets': 'a3.md'
+    - 'Résumé 3': 'r3.md'
+    - 'Activité 4 : simulation (I)': 'a4.md'
+  - 'Séquence 2 : Web (I)':
+    - 'Activité 5 : introduction': 'a5.md'
+    - 'Résumé 5': 'r5.md'
+    - 'Activité 6 : les URL': 'a6.md'
+    - 'Résumé 6': 'r6.md'
+    - 'Activité 7 : HTML et CSS': 'a7.md'
+    - 'Résumé 7': 'r7.md'
+  - 'Séquence 3 : Les RS':
+    - 'Activité 8 : différents RS': 'a8.md'
+    - 'Activité 9 : HTML et CSS': 'a9.md'
+    - 'Résumé 9': 'r9.md'
+    - 'Activité 10 : le petit monde': 'a10.md'
+  - 'Séquence 4 : Web (II)':
+    - 'Activité 11 : client/serveur': 'a11.md'
+    - 'Résumé 11': 'r11.md'
+    - 'Activité 12 : protocole HTTP': 'a12.md'
+    - 'Résumé 12': 'r12.md'
+    - 'Activité 13 : simulation (II)': 'a13.md'
+  - 'Séquence 5 : Internet (II)':
+    - 'Activité 14 : serveur DNS': 'a14.md'
+    - 'Résumé 14': 'r14.md'
+    - 'Activité 15 : réseaux  p2p': 'a15.md'
+    - 'Résumé 15': 'r15.md'
+    - 'Activité 16 : simulation (III)': 'a16.md'
