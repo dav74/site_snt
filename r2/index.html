@@ -13,7 +13,7 @@
     
     
       
-        <title>Résumé 1 - SNT</title>
+        <title>Résumé 2 - SNT</title>
       
     
     
@@ -97,7 +97,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Résumé 1
+              Résumé 2
             
           </span>
         </div>
@@ -223,52 +223,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Résumé 1
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../r1/" class="md-nav__link">
         Résumé 1
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table des matières
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#module-internet-i-introduction" class="md-nav__link">
-    Module Internet (I) : Introduction
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -292,11 +251,52 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../r2/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Résumé 2
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Résumé 2
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#module-internet-i-protocoles-tcp-et-ip" class="md-nav__link">
+    Module Internet (I) : Protocoles TCP et IP
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -793,8 +793,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#module-internet-i-introduction" class="md-nav__link">
-    Module Internet (I) : Introduction
+  <a href="#module-internet-i-protocoles-tcp-et-ip" class="md-nav__link">
+    Module Internet (I) : Protocoles TCP et IP
   </a>
   
 </li>
@@ -814,21 +814,18 @@
 
 
 <h1 id="fiche-de-revision">Fiche de révision</h1>
-<h2 id="module-internet-i-introduction">Module Internet (I) : Introduction</h2>
+<h2 id="module-internet-i-protocoles-tcp-et-ip">Module Internet (I) : Protocoles TCP et IP</h2>
 <p><strong>Ce qu’il faut savoir</strong></p>
 <ul>
-<li>Si l’on désire faire communiquer plusieurs ordinateurs entre eux, il faut que ces
-mêmes ordinateurs soient en réseau (tous les ordinateurs du lycée sont reliés entre
-eux, ils forment donc un réseau)</li>
-<li>Il est possible de relier des réseaux d’ordinateurs à d’autres réseaux d’ordinateurs,
-on obtient alors des réseaux de réseaux. Le réseau de réseaux le plus connu se
-nomme Internet</li>
-<li>L’idée de relier des réseaux d’ordinateurs à d’autres réseaux date des années 1970
-(projet ARPAnet)</li>
-<li>Afin de pouvoir s'identifier, tout ordinateur possède une adresse sur un réseau : son
-adresse IP</li>
-<li>Les adresses IP sont de la forme : "a.b.c.d", avec a, b, c et d des nombres compris
-entre 0 et 255</li>
+<li>En informatique un protocole permet de faciliter la communication entre des ordinateurs</li>
+<li>Internet est basé sur 2 protocoles : TCP et IP</li>
+<li>Pour transférer des données entre 2 ordinateurs, le protocole TCP encapsule ces données. Les données issues de l’encapsulation de TCP sont elles-mêmes encapsulées par le protocole IP. On obtient alors un paquet IP qui pourra être transmis sur le réseau. Une fois arrivées à destination, les données seront désencapsulées.</li>
+</ul>
+<p><img alt="" src="/img/a2_1.jpg" /></p>
+<ul>
+<li>Les accusés de réception permettent à l’ordinateur qui a envoyé les données, de s’assurer que ces données ont bien été réceptionnées par l’ordinateur destination (voir le schéma du cours). Le protocole TCP gère les accusés de réception.</li>
+<li>Le protocole UDP ressemble beaucoup au protocole TCP, seule différence notable : le protocole UDP ne gère pas les accusés de réception</li>
+<li>Lors du transfert, par exemple d’une photo, entre 2 ordinateurs, les données qui constituent la photo sont“découpées” en une multitude de petits paquets de données. Chaque petit paquet, après avoir été encapsulé par TCP et IP, “voyage” sur le réseau totalement indépendamment les uns des autres.</li>
 </ul>
 
               
@@ -843,7 +840,7 @@ entre 0 et 255</li>
     <nav class="md-footer__inner md-grid" aria-label="Pied de page">
       
         
-        <a href="../a1/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Activité 1 : introduction" rel="prev">
+        <a href="../a2/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Activité 2 : protocole TCP/IP" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -852,20 +849,20 @@ entre 0 et 255</li>
               <span class="md-footer__direction">
                 Précédent
               </span>
-              Activité 1 : introduction
+              Activité 2 : protocole TCP/IP
             </div>
           </div>
         </a>
       
       
         
-        <a href="../a2/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Activité 2 : protocole TCP/IP" rel="next">
+        <a href="../a3/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Activité 3 : routage des paquets" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Suivant
               </span>
-              Activité 2 : protocole TCP/IP
+              Activité 3 : routage des paquets
             </div>
           </div>
           <div class="md-footer__button md-icon">

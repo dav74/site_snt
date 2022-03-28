@@ -13,7 +13,7 @@
     
     
       
-        <title>Résumé 1 - SNT</title>
+        <title>Activité 2 : protocole TCP/IP - SNT</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#fiche-de-revision" class="md-skip">
+        <a href="#module-internet-i" class="md-skip">
           Aller au contenu
         </a>
       
@@ -97,7 +97,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Résumé 1
+              Activité 2 : protocole TCP/IP
             
           </span>
         </div>
@@ -223,6 +223,20 @@
               
   
   
+  
+    <li class="md-nav__item">
+      <a href="../r1/" class="md-nav__link">
+        Résumé 1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
     
   
   
@@ -235,12 +249,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Résumé 1
+          Activité 2 : protocole TCP/IP
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Résumé 1
+        Activité 2 : protocole TCP/IP
       </a>
       
         
@@ -259,9 +273,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#module-internet-i-introduction" class="md-nav__link">
-    Module Internet (I) : Introduction
+  <a href="#protocole-tcpip" class="md-nav__link">
+    Protocole TCP/IP
   </a>
+  
+    <nav class="md-nav" aria-label="Protocole TCP/IP">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#activite-21" class="md-nav__link">
+    Activité 2.1
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -269,20 +296,6 @@
   
 </nav>
       
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../a2/" class="md-nav__link">
-        Activité 2 : protocole TCP/IP
-      </a>
     </li>
   
 
@@ -793,9 +806,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#module-internet-i-introduction" class="md-nav__link">
-    Module Internet (I) : Introduction
+  <a href="#protocole-tcpip" class="md-nav__link">
+    Protocole TCP/IP
   </a>
+  
+    <nav class="md-nav" aria-label="Protocole TCP/IP">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#activite-21" class="md-nav__link">
+    Activité 2.1
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -813,23 +839,25 @@
                 
 
 
-<h1 id="fiche-de-revision">Fiche de révision</h1>
-<h2 id="module-internet-i-introduction">Module Internet (I) : Introduction</h2>
-<p><strong>Ce qu’il faut savoir</strong></p>
-<ul>
-<li>Si l’on désire faire communiquer plusieurs ordinateurs entre eux, il faut que ces
-mêmes ordinateurs soient en réseau (tous les ordinateurs du lycée sont reliés entre
-eux, ils forment donc un réseau)</li>
-<li>Il est possible de relier des réseaux d’ordinateurs à d’autres réseaux d’ordinateurs,
-on obtient alors des réseaux de réseaux. Le réseau de réseaux le plus connu se
-nomme Internet</li>
-<li>L’idée de relier des réseaux d’ordinateurs à d’autres réseaux date des années 1970
-(projet ARPAnet)</li>
-<li>Afin de pouvoir s'identifier, tout ordinateur possède une adresse sur un réseau : son
-adresse IP</li>
-<li>Les adresses IP sont de la forme : "a.b.c.d", avec a, b, c et d des nombres compris
-entre 0 et 255</li>
-</ul>
+<h1 id="module-internet-i">Module Internet (I)</h1>
+<h2 id="protocole-tcpip">Protocole TCP/IP</h2>
+<p>Sur internet l'échange de données entre deux ordinateurs est basé sur deux protocoles : le protocole IP et le protocole TCP. Mais qu'est-ce qu'un protocole ?</p>
+<p>Selon Wikipedia, dans le cas général : On nomme protocole les conventions qui facilitent une communication sans faire directement partie du sujet de la communication elle-même. En électronique et en informatique (toujours selon Wikipedia) : un protocole de communication est un ensemble de contraintes permettant d'établir une communication entre deux entités (dans le cas qui nous intéresse 2 ordinateurs).</p>
+<p>Il existe de nombreux protocoles qui permettent à deux ordinateurs de communiquer entre eux. Parmi ces nombreux protocoles, nous allons en étudier deux qui ont une importance fondamentale dans le fonctionnement d'internet : le protocole IP et le protocole TCP (d'un point de vue technique, les protocoles TCP et IP sont au coeur d'internet. Ils sont tellement liés entre eux que l'on parle souvent de protocole TCP/IP).</p>
+<p>Quand un ordinateur A "désire" envoyer des données à un ordinateur B, après quelques opérations qui ne seront pas abordées ici, l'ordinateur A "utilise" le protocole TCP pour mettre en forme les données à envoyer.</p>
+<p>Ensuite le protocole IP prend le relai et utilise les données mises en forme par le protocole TCP afin de créer des paquets de données. Après quelques autres opérations qui ne seront non plus évoquées ici, les paquets de données pourront commencer leur voyage sur le réseau jusqu'à l'ordinateur B. Il est important de bien comprendre que le protocole IP "encapsule" les données issues du protocole TCP afin de constituer des paquets de données</p>
+<p><img alt="" src="/img/a2_1.jpg" /></p>
+<p>Une fois arrivées à destination (ordinateur B), les données sont "désencapsulées" : on récupère les données TCP contenues dans les paquets afin de pouvoir les utiliser.</p>
+<p><img alt="" src="/img/a2_2.jpg" /></p>
+<p>Le protocole IP s'occupe uniquement de faire arriver à destination les paquets en utilisant l'adresse IP de l'ordinateur de destination. Les adresses IP de l'ordinateur de départ (ordinateur A) et de l'ordinateur destination (ordinateur B) sont ajoutées aux paquets de données.</p>
+<p><img alt="" src="/img/a2_3.jpg" /></p>
+<p>Le protocole TCP permet de s'assurer qu'un paquet est bien arrivé à destination. En effet quand l'ordinateur B reçoit un paquet de données en provenance de l'ordinateur A, l'ordinateur B envoie un accusé de réception à l'ordinateur A (un peu dans le genre "OK, j'ai bien reçu le paquet"). Si l'ordinateur A ne reçoit pas cet accusé de réception en provenance de B, après un temps prédéfini, l'ordinateur A renverra le paquet de données vers l'ordinateur B.</p>
+<p>Nous pouvons donc résumer le processus d'envoi d'un paquet de données comme suit :</p>
+<p><img alt="" src="/img/a2_4.png" /></p>
+<p>À noter qu'il existe aussi le protocole UDP qui ressemble beaucoup au protocole TCP. La grande différence entre UDP et TCP est que le protocole UDP ne gère pas les accusés de réception. Les échanges de données avec UDP sont donc moins fiables qu'avec TCP (un paquet "perdu" est définitivement "perdu" et ne sera pas renvoyé) mais beaucoup plus rapides (puisqu' il n'y a pas d'accusé de réception à transmettre). UDP est donc très souvent utilisé pour les échanges de données qui doivent être rapides, mais où la perte d'un paquet de données de temps en temps n'est pas un gros problème (par exemple le streaming vidéo).</p>
+<p>Il est très important de bien comprendre que TCP/IP repose sur la notion de paquets de données. Si par exemple on désire envoyer un fichier (son, photo, vidéo ou texte...) en utilisant TCP/IP, les données qui constituent ce fichier ne seront pas envoyées d'un seul tenant, ces données vont être "découpées" en plusieurs morceaux et chaque morceau sera envoyé dans un paquet différent. Une fois tous les paquets arrivés à destination, le fichier d'origine pourra être reconstitué. Pour aller d'un ordinateur A à un ordinateur B, les différents paquets contenant les données qui constituent notre fichier, ne passeront pas forcement par la même route (cette notion de route sera abordée plus tard), ils pourront emprunter des chemins très différents : en exagérant à peine, pour faire le trajet Paris-Los Angeles, certains paquets pourront passer par l'atlantique alors que d'autres passeront par le pacifique. Si un des paquets n'arrive pas à destination, le fichier ne pourra pas être reconstitué, le paquet "perdu" devra être renvoyé par l'émetteur (voir le système d'accusé de réception décrit ci-dessus).</p>
+<h3 id="activite-21">Activité 2.1</h3>
+<p>Faites un résumé de cette activité</p>
 
               
             </article>
@@ -843,7 +871,7 @@ entre 0 et 255</li>
     <nav class="md-footer__inner md-grid" aria-label="Pied de page">
       
         
-        <a href="../a1/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Activité 1 : introduction" rel="prev">
+        <a href="../r1/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Résumé 1" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -852,20 +880,20 @@ entre 0 et 255</li>
               <span class="md-footer__direction">
                 Précédent
               </span>
-              Activité 1 : introduction
+              Résumé 1
             </div>
           </div>
         </a>
       
       
         
-        <a href="../a2/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Activité 2 : protocole TCP/IP" rel="next">
+        <a href="../r2/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Résumé 2" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Suivant
               </span>
-              Activité 2 : protocole TCP/IP
+              Résumé 2
             </div>
           </div>
           <div class="md-footer__button md-icon">

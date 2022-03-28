@@ -13,7 +13,7 @@
     
     
       
-        <title>Résumé 1 - SNT</title>
+        <title>Module Données structurées et leur traitement - SNT</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#fiche-de-revision" class="md-skip">
+        <a href="#module-donnees-structurees-et-leur-traitement" class="md-skip">
           Aller au contenu
         </a>
       
@@ -97,7 +97,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Résumé 1
+              Module Données structurées et leur traitement
             
           </span>
         </div>
@@ -181,14 +181,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1" type="checkbox" id="__nav_1" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1" type="checkbox" id="__nav_1" >
       
       
       
@@ -223,52 +221,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Résumé 1
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../r1/" class="md-nav__link">
         Résumé 1
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table des matières
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#module-internet-i-introduction" class="md-nav__link">
-    Module Internet (I) : Introduction
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -793,9 +750,43 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#module-internet-i-introduction" class="md-nav__link">
-    Module Internet (I) : Introduction
+  <a href="#differents-types-de-donnees-structurees" class="md-nav__link">
+    différents types de données structurées
   </a>
+  
+    <nav class="md-nav" aria-label="différents types de données structurées">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#activite-171" class="md-nav__link">
+    Activité 17.1
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activite-172" class="md-nav__link">
+    Activité 17.2
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activite-173" class="md-nav__link">
+    Activité  17.3
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activite-174" class="md-nav__link">
+    Activité 17.4
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -813,23 +804,47 @@
                 
 
 
-<h1 id="fiche-de-revision">Fiche de révision</h1>
-<h2 id="module-internet-i-introduction">Module Internet (I) : Introduction</h2>
-<p><strong>Ce qu’il faut savoir</strong></p>
+<h1 id="module-donnees-structurees-et-leur-traitement">Module Données structurées et leur traitement</h1>
+<h2 id="differents-types-de-donnees-structurees">différents types de données structurées</h2>
+<p>On trouve énormément de données sur internet. Une partie de ces données sont publiques, par exemple le site data.gouv.fr récence un grand nombre de données publiques. Ces données sont librement réutilisables.</p>
+<h3 id="activite-171">Activité 17.1</h3>
+<p>Afin de découvrir ce qu'est "l'open data", nous allons utiliser le site data.gouv.fr. Résumez en quelques lignes ce que vous aurez appris en lisant la page suivante : <a href="https://doc.data.gouv.fr/" target="_blank">https://doc.data.gouv.fr/</a>.</p>
+<hr />
+<h3 id="activite-172">Activité 17.2</h3>
+<p>Explorez pendant quelques minutes le site <a href="https://www.data.gouv.fr/fr/" target="_blank">data.gouv.fr</a>. Recherchez les données "Opérations coordonnées par les CROSS" à l'aide du moteur de recherche proposé par le site</p>
+<p>Vous pouvez constater que ces données sont au format csv.</p>
+<hr />
+<p>Le format csv est très courant sur internet, nous allons l'étudier en premier.</p>
+<p>Voici ce que nous dit Wikipédia sur le format CSV :</p>
+<p><em>Comma-separated values, connu sous le sigle CSV, est un format informatique ouvert représentant des données tabulaires sous forme de valeurs séparées par des virgules.</em></p>
+<p>Un fichier CSV est un fichier texte, par opposition aux formats dits « binaires ». Chaque ligne du texte correspond à une ligne du tableau et les virgules correspondent aux séparations entre les colonnes. Les portions de texte séparées par une virgule correspondent ainsi aux contenus des cellules du tableau.</p>
+<p>Voici un exemple du contenu d'un fichier CSV :</p>
+<div class="highlight"><pre><span></span><code>nom,prenom,date_naissance
+Durand,Jean-Pierre,23/05/1985
+Dupont,Christophe,15/12/1967
+Terta,Henry,12/06/1978
+</code></pre></div>
+<p>Je pense qu'il est évident pour vous que nous avons ici 3 personnes :</p>
 <ul>
-<li>Si l’on désire faire communiquer plusieurs ordinateurs entre eux, il faut que ces
-mêmes ordinateurs soient en réseau (tous les ordinateurs du lycée sont reliés entre
-eux, ils forment donc un réseau)</li>
-<li>Il est possible de relier des réseaux d’ordinateurs à d’autres réseaux d’ordinateurs,
-on obtient alors des réseaux de réseaux. Le réseau de réseaux le plus connu se
-nomme Internet</li>
-<li>L’idée de relier des réseaux d’ordinateurs à d’autres réseaux date des années 1970
-(projet ARPAnet)</li>
-<li>Afin de pouvoir s'identifier, tout ordinateur possède une adresse sur un réseau : son
-adresse IP</li>
-<li>Les adresses IP sont de la forme : "a.b.c.d", avec a, b, c et d des nombres compris
-entre 0 et 255</li>
+<li>Jean-Pierre Durand qui est né le 23/05/1985</li>
+<li>Christophe Dupont qui est né le 15/12/1967</li>
+<li>Henry Terta qui est né le 12/06/1978</li>
 </ul>
+<h3 id="activite-173">Activité  17.3</h3>
+<p>Donnez les différentes valeurs du descripteur "date_naissance"</p>
+<hr />
+<p>ATTENTION :</p>
+<p>La virgule est un standard pour les données anglo-saxonnes, mais pas pour les données aux normes françaises. En effet, en français, la virgule est le séparateur des chiffres décimaux. Il serait impossible de différencier les virgules des décimaux et les virgules de séparation des informations. C’est pourquoi on utilise un autre séparateur : le point-virgule (;). Dans certains cas cela peut engendrer quelques problèmes, vous devrez donc rester vigilants sur le type de séparateur utilisé.</p>
+<p>Les tableurs, tels que "Calc" (Libre Office), sont normalement capables de lire les fichiers au format CSV. J'ai précisé "normalement" car certains tableurs gèrent mal le séparateur CSV "point-virgule" et le séparateur des chiffres décimaux "virgule".</p>
+<h3 id="activite-174">Activité 17.4</h3>
+<p>Après avoir téléchargé le fichier <a href="/asset/ident_pointVirgule.csv">ident_pointVirgule.csv</a>, ouvrez ce dernier à l'aide d'un tableur.</p>
+<p>Si par hasard votre tableur ne gère pas correctement le fichier avec le séparateur "point-virgule", voici une version "séparateur virgule" du fichier : <a href="v/asset/ident_irgule.csv">ident_virgule.csv</a></p>
+<p>Dans la suite, gardez toujours cet éventuel problème à l'esprit (surtout avec des données "made in France")</p>
+<hr />
+<p>Vous devriez obtenir ceci :</p>
+<p><img alt="" src="/img/snt_donnee_1.png" /></p>
+<p>Vous pouvez constater que les données sont bien "rangées" dans un tableau avec des lignes et des colonnes (voilà pourquoi on parle de données tabulaires.</p>
+<p>Il est possible de trouver sur le web des données beaucoup plus intéressantes à traiter que celles contenues dans le fichier "ident_pointVirgule.csv" (ou "ident_virgule.csv"). Par exemple, le site <a href="https://sql.sh/736-base-donnees-villes-francaises" target="_blank">sql.sh</a>, propose un fichier csv contenant des informations sur l'ensemble des communes françaises.</p>
 
               
             </article>
@@ -839,41 +854,6 @@ entre 0 et 255</li>
       </main>
       
         <footer class="md-footer">
-  
-    <nav class="md-footer__inner md-grid" aria-label="Pied de page">
-      
-        
-        <a href="../a1/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Activité 1 : introduction" rel="prev">
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-          </div>
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Précédent
-              </span>
-              Activité 1 : introduction
-            </div>
-          </div>
-        </a>
-      
-      
-        
-        <a href="../a2/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Activité 2 : protocole TCP/IP" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Suivant
-              </span>
-              Activité 2 : protocole TCP/IP
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
-          </div>
-        </a>
-      
-    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
