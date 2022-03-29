@@ -1,0 +1,1329 @@
+
+<!doctype html>
+<html lang="fr" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../img/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.2.3">
+    
+    
+      
+        <title>Activité 7 : HTML et CSS - SNT</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.e8d9bf0c.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.e6a45f82.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#000000">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="black" data-md-color-accent="">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#module-web-i" class="md-skip">
+          Aller au contenu
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="En-tête">
+    <a href=".." title="SNT" class="md-header__button md-logo" aria-label="SNT" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            SNT
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Activité 7 : HTML et CSS
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Rechercher" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Effacer" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initialisation de la recherche
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="SNT" class="md-nav__button md-logo" aria-label="SNT" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    SNT
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1" type="checkbox" id="__nav_1" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1">
+          Séquence 1 : Internet (I)
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Séquence 1 : Internet (I)" data-md-level="1">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          Séquence 1 : Internet (I)
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../a1/" class="md-nav__link">
+        Activité 1 : introduction
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../r1/" class="md-nav__link">
+        Résumé 1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../a2/" class="md-nav__link">
+        Activité 2 : protocole TCP/IP
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../r2/" class="md-nav__link">
+        Résumé 2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../a3/" class="md-nav__link">
+        Activité 3 : routage des paquets
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../r3/" class="md-nav__link">
+        Résumé 3
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../a4/" class="md-nav__link">
+        Activité 4 : simulation (I)
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Séquence 2 : Web (I)
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Séquence 2 : Web (I)" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Séquence 2 : Web (I)
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../a5/" class="md-nav__link">
+        Activité 5 : introduction
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../r5/" class="md-nav__link">
+        Résumé 5
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../a6/" class="md-nav__link">
+        Activité 6 : les URL
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../r6/" class="md-nav__link">
+        Résumé 6
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Activité 7 : HTML et CSS
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Activité 7 : HTML et CSS
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#html-et-css" class="md-nav__link">
+    HTML et CSS
+  </a>
+  
+    <nav class="md-nav" aria-label="HTML et CSS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#activite-71" class="md-nav__link">
+    Activité 7.1
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activite-72" class="md-nav__link">
+    Activité 7.2
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activite-73" class="md-nav__link">
+    Activité 7.3
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activite-74" class="md-nav__link">
+    Activité 7.4
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activite-75" class="md-nav__link">
+    Activité 7.5
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activite-76" class="md-nav__link">
+    Activité 7.6
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#balise-a" class="md-nav__link">
+    balise a
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#balise-image" class="md-nav__link">
+    balise image
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#les-balises-form-input-et-button" class="md-nav__link">
+    Les balises form, input et button
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activite-77" class="md-nav__link">
+    Activité 7.7
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#les-balises-div-et-span" class="md-nav__link">
+    Les balises div et span
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activite-78" class="md-nav__link">
+    Activité 7.8
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activite-79" class="md-nav__link">
+    Activité 7.9
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../r7/" class="md-nav__link">
+        Résumé 7
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Séquence 3 : Les RS
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Séquence 3 : Les RS" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Séquence 3 : Les RS
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../a8/" class="md-nav__link">
+        Activité 8 : différents RS
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../a9/" class="md-nav__link">
+        Activité 9 : HTML et CSS
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../r9/" class="md-nav__link">
+        Résumé 9
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../a10/" class="md-nav__link">
+        Activité 10 : le petit monde
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Séquence 4 : Web (II)
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Séquence 4 : Web (II)" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Séquence 4 : Web (II)
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../a11/" class="md-nav__link">
+        Activité 11 : client/serveur
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../r11/" class="md-nav__link">
+        Résumé 11
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../a12/" class="md-nav__link">
+        Activité 12 : protocole HTTP
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../r12/" class="md-nav__link">
+        Résumé 12
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../a13/" class="md-nav__link">
+        Activité 13 : simulation (II)
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          Séquence 5 : Internet (II)
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Séquence 5 : Internet (II)" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Séquence 5 : Internet (II)
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../a14/" class="md-nav__link">
+        Activité 14 : serveur DNS
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../r14/" class="md-nav__link">
+        Résumé 14
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../a15/" class="md-nav__link">
+        Activité 15 : réseaux  p2p
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../r15/" class="md-nav__link">
+        Résumé 15
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../a16/" class="md-nav__link">
+        Activité 16 : simulation (III)
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#html-et-css" class="md-nav__link">
+    HTML et CSS
+  </a>
+  
+    <nav class="md-nav" aria-label="HTML et CSS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#activite-71" class="md-nav__link">
+    Activité 7.1
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activite-72" class="md-nav__link">
+    Activité 7.2
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activite-73" class="md-nav__link">
+    Activité 7.3
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activite-74" class="md-nav__link">
+    Activité 7.4
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activite-75" class="md-nav__link">
+    Activité 7.5
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activite-76" class="md-nav__link">
+    Activité 7.6
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#balise-a" class="md-nav__link">
+    balise a
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#balise-image" class="md-nav__link">
+    balise image
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#les-balises-form-input-et-button" class="md-nav__link">
+    Les balises form, input et button
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activite-77" class="md-nav__link">
+    Activité 7.7
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#les-balises-div-et-span" class="md-nav__link">
+    Les balises div et span
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activite-78" class="md-nav__link">
+    Activité 7.8
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activite-79" class="md-nav__link">
+    Activité 7.9
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+<h1 id="module-web-i">Module Web (I)</h1>
+<h2 id="html-et-css">HTML et CSS</h2>
+<p>Nous allons nous intéresser à un acteur fondamental du développement web, le couple HTML+CSS (Hyper Text Markup Langage et Cascading Style Sheets).</p>
+<p>Dans un premier temps, nous allons exclusivement nous intéresser au HTML. Qu'est-ce que le HTML, voici la définition que nous en donne Wikipedia :</p>
+<p><em>L’Hypertext Markup Language, généralement abrégé HTML, est le format de données conçu pour représenter les pages web. C’est un langage de balisage permettant d’écrire de l’hypertexte, d’où son nom. HTML permet également de structurer sémantiquement et de mettre en forme le contenu des pages, d’inclure des ressources multimédias, dont des images, des formulaires de saisie, et des programmes informatiques. Il permet de créer des documents interopérables avec des équipements très variés de manière conforme aux exigences de l’accessibilité du web. Il est souvent utilisé conjointement avec des langages de programmation (JavaScript) et des formats de présentation (feuilles de style en cascade).</em></p>
+<p>Pour l'instant, nous allons retenir deux éléments de cette définition «conçu pour représenter les pages web» et «un langage de balisage».</p>
+<p>Grâce au HTML vous allez pouvoir, dans votre navigateur (Firefox, Chrome, Opera,....), afficher du texte, afficher des images, proposer des hyperliens (liens vers d'autres pages web), afficher des formulaires et même maintenant afficher des vidéos (grâce à la dernière version du HTML, l'HTML5).</p>
+<p>HTML n'est pas un langage de programmation (comme le Python par exemple), ici, pas question de conditions, de boucles....c'est un langage de description.</p>
+<p>Pour aborder le HTML, nous allons, dans un premier temps utiliser le site jsfiddle.net.</p>
+<p>Après avoir lancé votre navigateur web, tapez http://jsfiddle.net/ dans la barre d'adresse.</p>
+<p>Vous devriez voir apparaître ceci</p>
+<p><img alt="" src="/img/jsfiddle.png" /></p>
+<p>Nous allons pour l'instant uniquement utiliser la fenêtre "HTML" et la fenêtre "Result".</p>
+<h3 id="activite-71">Activité 7.1</h3>
+<p>Écrivez le code HTML suivant :</p>
+<p><div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Hello World! Ceci est un titre<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Ceci est un <span class="p">&lt;</span><span class="nt">strong</span><span class="p">&gt;</span>paragraphe<span class="p">&lt;/</span><span class="nt">strong</span><span class="p">&gt;</span>. Avez-vous bien compris ?<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</code></pre></div>
+Qu'est-ce qui s'affiche dans la fenêtre ?</p>
+<hr />
+<p>Comme déjà évoqué ci-dessus, en HTML tout est une histoire de balise que l'on ouvre et que l'on ferme. Une balise ouvrante est de la forme <code>&lt;nom_de_la_balise&gt;</code>, les balises fermantes sont de la forme <code>&lt;/nom_de_la_balise&gt;</code>.</p>
+<p>En observant attentivement le code, vous devriez forcément remarquer que toute balise ouverte doit être refermée à un moment ou un autre. La balise ouvrante et la balise fermante peuvent être sur la même ligne ou pas, cela n'a aucune espèce d'importance, la seule question à se poser ici est : ai-je bien refermé toutes les balises que j'ai ouvertes ?</p>
+<p>Enfin pour terminer avec les généralités sur les balises, il est important de savoir qu'une structure du type :</p>
+<div class="highlight"><pre><span></span><code>&lt;balise1&gt;
+&lt;balise2&gt;
+&lt;/balise1&gt;
+&lt;/balise2&gt;
+</code></pre></div>
+<p>est interdite, la balise2 a été ouverte après la balise1, elle devra donc être refermée avant la balise1.</p>
+<p>En revanche, l'enchaînement suivant est correct :</p>
+<div class="highlight"><pre><span></span><code>&lt;balise1&gt;
+&lt;balise2&gt;
+&lt;/balise2&gt;
+&lt;/balise1&gt;
+</code></pre></div>
+<p>Notez que dans notre exemple nous respectons bien cette règle « d'imbrication » des balises avec la balise <code>&lt;p&gt;</code> et la balise <code>&lt;strong&gt;</code>.</p>
+<p>Il est important de comprendre que chaque balise a une signification qu'il faut bien respecter (on parle de la sémantique des balises). Par exemple le texte situé entre la balise ouvrante et fermante <code>&lt;h1&gt;</code> est obligatoirement un titre important (il existe des balises <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>......qui sont aussi des titres, mais des titres moins importants (sous-titre)). La balise <code>&lt;p&gt;</code> permet de définir des paragraphes, enfin, la balise <code>&lt;strong&gt;</code> permet de mettre en évidence un élément important.</p>
+<p>Vous devez aussi savoir qu'il existe des balises qui sont à la fois ouvrantes et fermantes (<code>&lt;balise/&gt;</code>) : un exemple, la balise permettant de sauter une ligne, la balise <code>&lt;br/&gt;</code> (balise qu'il faut d'ailleurs éviter d'utiliser par différentes raisons que nous n'aborderons pas ici).</p>
+<p>Il est possible d'ajouter des éléments à une balise ouvrante, on parle d'attribut. Une balise peut contenir plusieurs attributs :</p>
+<div class="highlight"><pre><span></span><code>&lt;ma_balise attribut_1= &quot;valeur_1&quot; attribut_2=&quot;valeur_2&quot;&gt;
+</code></pre></div>
+<p>Il existe beaucoup d'attributs différents, nous allons nous contenter de 2 exemples avec l'attribut id (id pour identifiant) et class. Nous verrons l’intérêt de ces attributs dans l'activité suivante.</p>
+<h3 id="activite-72">Activité 7.2</h3>
+<p>Écrivez le code HTML suivant :</p>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Ceci est un titre<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">h2</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;titre_1&quot;</span><span class="p">&gt;</span>Ceci est un sous titre<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">p</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;para_1&quot;</span><span class="p">&gt;</span>Ceci est un <span class="p">&lt;</span><span class="nt">strong</span><span class="p">&gt;</span>paragraphe<span class="p">&lt;/</span><span class="nt">strong</span><span class="p">&gt;</span>. Avez-vous bien compris ?<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>Qu'est-ce qui s'affiche dans la fenêtre ?</p>
+<hr />
+<p>Le HTML n'a pas été conçu pour gérer la mise en page (c'est possible, mais c'est une mauvaise pratique). Le HTML s'occupe uniquement du contenu et de la sémantique, pour tout ce qui concerne la mise en page et l'aspect « décoratif » (on parle du « style » de la page), on utilisera le CSS (Cascading Style Sheets).</p>
+<p>Dans JSFIDDLE, il est possible d'écrire du CSS dans la fenêtre en haut à droite.</p>
+<h3 id="activite-73">Activité 7.3</h3>
+<p>Écrivez le code HTML suivant (dans la fenêtre HTML de JsFiddle) :</p>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Ceci est un titre<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Ceci est un sous titre<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Ceci est un <span class="p">&lt;</span><span class="nt">strong</span><span class="p">&gt;</span>paragraphe<span class="p">&lt;/</span><span class="nt">strong</span><span class="p">&gt;</span>. Avez-vous bien compris ?<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>Écrivez le code CSS suivant (dans la fenêtre CSS de JsFiddle) :</p>
+<div class="highlight"><pre><span></span><code><span class="nt">h1</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="k">text-align</span><span class="p">:</span><span class="w"> </span><span class="kc">center</span><span class="p">;</span><span class="w"></span>
+<span class="k">background-color</span><span class="p">:</span><span class="w"> </span><span class="kc">red</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+<span class="nt">h2</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="k">font-family</span><span class="p">:</span><span class="w"> </span><span class="n">Verdana</span><span class="p">;</span><span class="w"></span>
+<span class="k">font-style</span><span class="p">:</span><span class="w"> </span><span class="kc">italic</span><span class="p">;</span><span class="w"></span>
+<span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="kc">green</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
+<p>Qu'est-ce qui s'affiche dans la fenêtre ?</p>
+<hr />
+<p>Dans l'exemple de l'activité 7.3, les propriétés "text-align" et "background-color" seront appliquées au contenu de toutes les balises de type h1 (avec respectivement les valeurs "center" et "red")...</p>
+<h3 id="activite-74">Activité 7.4</h3>
+<p>Écrivez le code HTML suivant :</p>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Ceci est un titre<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Ceci est un sous titre<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">p</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;para_1&quot;</span><span class="p">&gt;</span>Ceci est un <span class="p">&lt;</span><span class="nt">strong</span><span class="p">&gt;</span>paragraphe<span class="p">&lt;/</span><span class="nt">strong</span><span class="p">&gt;</span>. Avez-vous bien compris ?<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>Écrivez le code CSS suivant :</p>
+<div class="highlight"><pre><span></span><code><span class="p">#</span><span class="nn">para_1</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="k">font-style</span><span class="p">:</span><span class="w"> </span><span class="kc">italic</span><span class="p">;</span><span class="w"></span>
+<span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="kc">green</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
+<p>Qu'est-ce qui s'affiche dans la fenêtre ? Que remarquez-vous ?</p>
+<hr />
+<p>Il est donc possible de cibler un paragraphe et pas un autre en utilisant l'id du paragraphe (en CSS l'id se traduisant par le signe #).</p>
+<p>Il est aussi possible d'utiliser l'attribut class à la place de l'id. Dans le CSS on utilisera le point . à la place du #.</p>
+<p>La différence entre "id" et "class" n'est pas très importante.</p>
+<p>L'attribut "class" permet de donner le même nom à plusieurs reprises dans une même page.</p>
+<p>Si nous avions eu un 3e paragraphe, nous aurions pu avoir :
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;para_1&quot;</span><span class="p">&gt;</span>Voici un 3e paragraphe<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</code></pre></div>
+mais nous n'aurions pas pu avoir : </p>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">p</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;para_1&quot;</span><span class="p">&gt;</span> Voici un 3e paragraphe <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>car le nom para_1 a déjà été utilisé pour le 1er paragraphe.</p>
+<p>JSFIDDLE est un très bel outil, mais il ne peut pas être utilisé pour la réalisation d'un vrai site internet (ou d'une vraie application web).</p>
+<p>Nous allons créer 2 fichiers : un fichier qui contiendra du HTML (index.html) et un fichier qui contiendra du CSS (style.css).</p>
+<h3 id="activite-75">Activité 7.5</h3>
+<p>À l'aide d'un éditeur de texte, créer un nouveau fichier.</p>
+<p>Sauvegardez-le en précisant son nom, par exemple "index.html".</p>
+<p>Écrivez le code suivant dans votre éditeur de texte (sans oublier de sauvegarder quand vous avez terminé) :</p>
+<div class="highlight"><pre><span></span><code><span class="cp">&lt;!doctype html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;fr&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Voici mon site<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Hello World! Ceci est un titre<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Ceci est un <span class="p">&lt;</span><span class="nt">strong</span><span class="p">&gt;</span>paragraphe<span class="p">&lt;/</span><span class="nt">strong</span><span class="p">&gt;</span>. Avez-vous bien compris ?<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>Testez votre code à l'aide d'un navigateur web (Firefox ou Chrome) en “double-cliquant” sur le fichier index.html</p>
+<hr />
+<p>Dans l'exemple de l'activité 7.5, vous reconnaissez le code se trouvant entre les balises <code>&lt;body&gt;</code> :</p>
+<div class="highlight"><pre><span></span><code>&lt;body&gt;
+......
+&lt;/body&gt;
+</code></pre></div>
+<p>Tout votre code HTML devra se trouver entre ces 2 balises.</p>
+<p>Le reste des balises devraient vous êtes inconnues. Passons-les en revue :</p>
+<p>La première ligne (<code>&lt;!doctype html&gt;</code>) permet d'indiquer au navigateur que nous utiliserons la dernière version du HTML, le fameux HTML5.</p>
+<p>La balise <code>&lt;html&gt;</code> est obligatoire, l'attribut lang="fr" permet d'indiquer au navigateur que nous utiliserons le français pour écrire notre page.</p>
+<p>Les balises <code>&lt;head&gt;...&lt;/head&gt;</code> délimitent ce que l'on appelle l'en-tête. L'en-tête contient, dans notre exemple, 2 balises : la balise <code>&lt;meta charset="utf-8"&gt;</code> qui permet de définir l'encodage des caractères (utf-8) et la balise <code>&lt;title&gt;</code> qui définit le titre de la page (attention ce titre ne s'affiche pas dans le navigateur, ne pas confondre avec la balise <code>&lt;h1&gt;</code>).</p>
+<h3 id="activite-76">Activité 7.6</h3>
+<p>Toujours à l'aide d'un éditeur de texte, vous allez créer un fichier qui va contenir le CSS de notre page (par exemple style.css). Complétez ce fichier à l'aide du code suivant :</p>
+<div class="highlight"><pre><span></span><code><span class="nt">h1</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="k">text-align</span><span class="p">:</span><span class="w"> </span><span class="kc">center</span><span class="p">;</span><span class="w"></span>
+<span class="k">background-color</span><span class="p">:</span><span class="w"> </span><span class="kc">red</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+<span class="nt">p</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="k">font-family</span><span class="p">:</span><span class="w"> </span><span class="n">Verdana</span><span class="p">;</span><span class="w"></span>
+<span class="k">font-style</span><span class="p">:</span><span class="w"> </span><span class="kc">italic</span><span class="p">;</span><span class="w"></span>
+<span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="kc">green</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
+<p>Pour l'instant notre CSS ne sera pas appliqué à notre page, pour ce faire, il faut modifier notre code HTML en ajoutant une ligne qui va permettre d'associer notre code CSS à notre page.</p>
+<p>Modifiez le code HTML avec la ligne suivante <code>&lt;link rel="stylesheet" href="style.css"&gt;</code> :</p>
+<div class="highlight"><pre><span></span><code><span class="cp">&lt;!doctype html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;fr&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Voici mon site<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;style.css&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Hello World! Ceci est un titre<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Ceci est un <span class="p">&lt;</span><span class="nt">strong</span><span class="p">&gt;</span>paragraphe<span class="p">&lt;/</span><span class="nt">strong</span><span class="p">&gt;</span>. Avez-vous bien compris ?<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>Testez votre code à l'aide d'un navigateur web en “double-cliquant” sur le fichier index.html</p>
+<hr />
+<p>Dans l'exemple que nous venons de voir, les fichiers "index.html" et "style.css" se trouvent dans le même dossier. Il est souvent utile de placer les fichiers CSS dans un dossier “CSS”. Il faudra alors modifier le code HTML en conséquence :</p>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;CSS/style.css&quot;</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>Pour terminer, voici quelques balises très utilisées :</p>
+<h3 id="balise-a">balise a</h3>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;mon_autre_page.html&quot;</span><span class="p">&gt;</span>Cliquez ici pour vous rendre sur mon autre page<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>La balise a permet de créer des liens hypertextes, ce sont ces liens hypertextes qui vous permettent de "voyager" entre les pages d'un site ou entre les sites. Les liens hypertextes sont par défaut soulignés et de couleur bleue (modifiable grâce au CSS). La balise a possède un attribut href qui a pour valeur le chemin du fichier que l'on cherche à atteindre ou l'adresse du site cible (exemple : <code>&lt;a href="http://www.google.fr"&gt;Cliquez ici pour vous rendre sur google.fr&lt;/a&gt;</code>). Entre la balise ouvrante et fermante, on trouve le texte qui s'affichera à l'écran (c'est ce texte qui est souligné et de couleur bleue).La balise peut sans problème se trouver en plein milieu d'un paragraphe.</p>
+<h3 id="balise-image">balise image</h3>
+<p>Comme vous devez déjà vous en douter, la balise image sert à insérer des......images :</p>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;mon_image.jpg&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;avion&quot;</span><span class="p">/&gt;</span>
+</code></pre></div>
+<p>la balise img est à la fois ouvrante et fermante comme la balise br. Elle possède 2 attributs :</p>
+<ul>
+<li><em>src</em> qui doit être égal au nom du fichier image (ou au chemin si le fichier image se trouve dans un autre dossier).</li>
+<li><em>alt</em> qui doit être égal à une description de votre image (cet attribut est utilisé notamment par les systèmes de description des pages web utilisées par les non-voyants), il faut donc systématiquement renseigner cet attribut.</li>
+</ul>
+<h3 id="les-balises-form-input-et-button">Les balises form, input et button</h3>
+<p>Les formulaires sont des éléments importants des sites internet, ils permettent à l'utilisateur de transmettre des informations. Un formulaire devra être délimité par une balise form (même si ce n'est pas une obligation) :</p>
+<div class="highlight"><pre><span></span><code>&lt;form&gt;
+....
+&lt;/form&gt;
+</code></pre></div>
+<p>Il existe différentes balises permettant de construire un formulaire, notamment la balise <em>input</em>. Cette balise possède un attribut type qui lui permet de jouer des rôles très différents.</p>
+<p>La balise <em>button</em> nous sera aussi d'une grande utilité.</p>
+<h3 id="activite-77">Activité 7.7</h3>
+<p>Créez un fichier html contenant le code suivant :</p>
+<div class="highlight"><pre><span></span><code><span class="cp">&lt;!doctype html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;fr&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Voici mon site<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">form</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>voici un champ de texte : <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span><span class="p">/&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>voici une checkbox <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;checkbox&quot;</span><span class="p">/&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">button</span><span class="p">&gt;</span>Cliquez ici !<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>Testez votre code à l'aide d'un navigateur web en “double-cliquant” sur le fichier html que vous venez de créer.</p>
+<hr />
+<h3 id="les-balises-div-et-span">Les balises div et span</h3>
+<p>Ces 2 balises sont très utilisées (surtout la balise div). Pourtant, il faudrait, autant que possible, les éviter, pourquoi ?</p>
+<p>Parce qu'elles n'ont aucune signification particulière, ce sont des balises dites “génériques”.</p>
+<p>À quoi servent-elles alors ?</p>
+<p>À organiser la page, à regrouper plusieurs balises dans une même entité.</p>
+<p>Pourquoi 2 balises génériques ?</p>
+<p>Parce que div est une balise de type “block” et que span est une balise de type “inline” !</p>
+<p>Sans vouloir trop entrer dans les détails, il faut bien comprendre que l'ordre des balises dans le code HTML a une grande importance. Les balises sont affichées les unes après les autres, on parle du flux normal de la page.</p>
+<p>C'est ici qu'entrent en jeu les balises de type "block" et les balises de type "inline".</p>
+<ul>
+<li>Les contenus des balises de type "block" (p, div,h1,...) se placent sur la page web les uns en dessous des autres.</li>
+<li>Les contenus des balises de type "inline" (strong, img, span, a) se placent sur la page web les uns à côté des autres.</li>
+</ul>
+<p>Cela revient à dire qu'une balise de type “block” prend toute la largeur de la page alors qu'une balise de type “inline” prend juste la largeur qui lui est nécessaire.</p>
+<h3 id="activite-78">Activité 7.8</h3>
+<p>Créez un fichier html contenant le code suivant :</p>
+<p><div class="highlight"><pre><span></span><code><span class="cp">&lt;!doctype html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;fr&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Voici mon site<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>div est une balise de type &quot;block&quot;<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>la balise p est une autre balise de type block<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;</span>En revanche, span est une balise de type &quot;inline&quot;<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;www.google.fr&quot;</span><span class="p">&gt;</span>Et voici une autre balise de type &quot;inline&quot;<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>h1 est bien une balise de type &quot;block&quot;<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;</span>la malheureuse balise span est &quot;obligée&quot; de se placer en dessous<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div>
+Testez ce code</p>
+<hr />
+<h3 id="activite-79">Activité 7.9</h3>
+<p>Élaborez une page HTML sur le thème de votre choix en utilisant les balises vues ci-dessus.</p>
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Pied de page">
+      
+        
+        <a href="../r6/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Résumé 6" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Précédent
+              </span>
+              Résumé 6
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../r7/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Résumé 7" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Suivant
+              </span>
+              Résumé 7
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copier dans le presse-papier", "clipboard.copied": "Copi\u00e9 dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Rechercher", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.term.missing": "Non trouv\u00e9", "select.version.title": "S\u00e9lectionner la version"}, "search": "../assets/javascripts/workers/search.bd0b6b67.min.js"}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.b88e97c5.min.js"></script>
+      
+        <script src="../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
