@@ -1,0 +1,1414 @@
+
+<!doctype html>
+<html lang="fr" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../img/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.2.3">
+    
+    
+      
+        <title>Activité 18 : trait données - SNT</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.e8d9bf0c.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.e6a45f82.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#000000">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="black" data-md-color-accent="">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#module-donnees-structurees-et-leur-traitement" class="md-skip">
+          Aller au contenu
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="En-tête">
+    <a href=".." title="SNT" class="md-header__button md-logo" aria-label="SNT" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            SNT
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Activité 18 : trait données
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Rechercher" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Effacer" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initialisation de la recherche
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="SNT" class="md-nav__button md-logo" aria-label="SNT" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    SNT
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1" type="checkbox" id="__nav_1" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1">
+          Séquence 1 : Internet (I)
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Séquence 1 : Internet (I)" data-md-level="1">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          Séquence 1 : Internet (I)
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../a1/" class="md-nav__link">
+        Activité 1 : introduction
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../r1/" class="md-nav__link">
+        Résumé 1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../a2/" class="md-nav__link">
+        Activité 2 : protocole TCP/IP
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../r2/" class="md-nav__link">
+        Résumé 2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../a3/" class="md-nav__link">
+        Activité 3 : routage des paquets
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../r3/" class="md-nav__link">
+        Résumé 3
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../a4/" class="md-nav__link">
+        Activité 4 : simulation (I)
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Séquence 2 : Web (I)
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Séquence 2 : Web (I)" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Séquence 2 : Web (I)
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../a5/" class="md-nav__link">
+        Activité 5 : introduction
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../r5/" class="md-nav__link">
+        Résumé 5
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../a6/" class="md-nav__link">
+        Activité 6 : les URL
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../r6/" class="md-nav__link">
+        Résumé 6
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../a7/" class="md-nav__link">
+        Activité 7 : HTML et CSS
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../r7/" class="md-nav__link">
+        Résumé 7
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Séquence 3 : Les RS
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Séquence 3 : Les RS" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Séquence 3 : Les RS
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../a8/" class="md-nav__link">
+        Activité 8 : différents RS
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../a9/" class="md-nav__link">
+        Activité 9 : HTML et CSS
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../r9/" class="md-nav__link">
+        Résumé 9
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../a10/" class="md-nav__link">
+        Activité 10 : le petit monde
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Séquence 4 : Web (II)
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Séquence 4 : Web (II)" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Séquence 4 : Web (II)
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../a11/" class="md-nav__link">
+        Activité 11 : client/serveur
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../r11/" class="md-nav__link">
+        Résumé 11
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../a12/" class="md-nav__link">
+        Activité 12 : protocole HTTP
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../r12/" class="md-nav__link">
+        Résumé 12
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../a13/" class="md-nav__link">
+        Activité 13 : simulation (II)
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          Séquence 5 : Internet (II)
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Séquence 5 : Internet (II)" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Séquence 5 : Internet (II)
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../a14/" class="md-nav__link">
+        Activité 14 : serveur DNS
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../r14/" class="md-nav__link">
+        Résumé 14
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../a15/" class="md-nav__link">
+        Activité 15 : réseaux  p2p
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../r15/" class="md-nav__link">
+        Résumé 15
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../a16/" class="md-nav__link">
+        Activité 16 : simulation (III)
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          Séquence 6 : Données struc
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Séquence 6 : Données struc" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Séquence 6 : Données struc
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../a17/" class="md-nav__link">
+        Activité 17 : diff données
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../r17/" class="md-nav__link">
+        Résumé 17
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Activité 18 : trait données
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Activité 18 : trait données
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#traitement-de-donnees-structurees" class="md-nav__link">
+    traitement de données structurées
+  </a>
+  
+    <nav class="md-nav" aria-label="traitement de données structurées">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#activite-181" class="md-nav__link">
+    Activité 18.1
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activite-182" class="md-nav__link">
+    Activité 18.2
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activite-183" class="md-nav__link">
+    Activité 18.3
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activite-184" class="md-nav__link">
+    Activité 18.4
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activite-185" class="md-nav__link">
+    Activité 18.5
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activite-186" class="md-nav__link">
+    Activité 18.6
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activite-187" class="md-nav__link">
+    Activité 18.7
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activite-188" class="md-nav__link">
+    Activité 18.8
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activite-189" class="md-nav__link">
+    Activité 18.9
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activite-1810" class="md-nav__link">
+    Activité 18.10
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activite-1811" class="md-nav__link">
+    Activité 18.11
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activite-1812" class="md-nav__link">
+    Activité 18.12
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activite-1813" class="md-nav__link">
+    Activité 18.13
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activite-1814" class="md-nav__link">
+    Activité 18.14
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activite-1815" class="md-nav__link">
+    Activité 18.15
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activite-1816" class="md-nav__link">
+    Activité 18.16
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activite-1817" class="md-nav__link">
+    Activité 18.17
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activite-1818" class="md-nav__link">
+    Activité 18.18
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activite-1819" class="md-nav__link">
+    Activité 18.19
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../a19/" class="md-nav__link">
+        Activité 19 : le cloud
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#traitement-de-donnees-structurees" class="md-nav__link">
+    traitement de données structurées
+  </a>
+  
+    <nav class="md-nav" aria-label="traitement de données structurées">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#activite-181" class="md-nav__link">
+    Activité 18.1
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activite-182" class="md-nav__link">
+    Activité 18.2
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activite-183" class="md-nav__link">
+    Activité 18.3
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activite-184" class="md-nav__link">
+    Activité 18.4
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activite-185" class="md-nav__link">
+    Activité 18.5
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activite-186" class="md-nav__link">
+    Activité 18.6
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activite-187" class="md-nav__link">
+    Activité 18.7
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activite-188" class="md-nav__link">
+    Activité 18.8
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activite-189" class="md-nav__link">
+    Activité 18.9
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activite-1810" class="md-nav__link">
+    Activité 18.10
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activite-1811" class="md-nav__link">
+    Activité 18.11
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activite-1812" class="md-nav__link">
+    Activité 18.12
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activite-1813" class="md-nav__link">
+    Activité 18.13
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activite-1814" class="md-nav__link">
+    Activité 18.14
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activite-1815" class="md-nav__link">
+    Activité 18.15
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activite-1816" class="md-nav__link">
+    Activité 18.16
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activite-1817" class="md-nav__link">
+    Activité 18.17
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activite-1818" class="md-nav__link">
+    Activité 18.18
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activite-1819" class="md-nav__link">
+    Activité 18.19
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+<h1 id="module-donnees-structurees-et-leur-traitement">Module Données structurées et leur traitement</h1>
+<h2 id="traitement-de-donnees-structurees">traitement de données structurées</h2>
+<p>Après avoir vu différents types de données, nous allons maintenant, à l'aide du langage de programmation Python, apprendre à effectuer des traitements sur ces données.</p>
+<h3 id="activite-181">Activité 18.1</h3>
+<p>Ouvrez le logiciel Spyder</p>
+<p><img alt="" src="/img/spyder.png" /></p>
+<p>Dans un Spyder vous pouvez saisir du code (partie "Editeur de texte") mais aussi, saisir des commandes (nous verrons ce concept de commande plus loin) dans la partie "Console".</p>
+<hr />
+<p>Pour traiter des données, nous allons utiliser la bibliothèque Python Pandas. Une bibliothèque Python permet de rajouter des fonctionnalités par rapport au langage de base. La bibliothèque Pandas est donc très utilisée pour tout ce qui touche au traitement des données.</p>
+<p>Pour nos premiers pas avec Pandas, nous allons utiliser des données très simples au format CSV : ces données sont contenues dans le fichier ident_virgule.csv.</p>
+<h3 id="activite-182">Activité 18.2</h3>
+<p>Après avoir téléchargé le fichier <a href="/asset/ident_virgule.csv">ident_virgule.csv</a>, placez-le dans le dossier de votre choix (par exemple dans un dossier nommé "act_pandas")</p>
+<h3 id="activite-183">Activité 18.3</h3>
+<p>Dans la partie "Editeur de texte" de Spyder, saisissez le code Python suivant :</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pandas</span>
+<span class="n">iden</span><span class="o">=</span><span class="n">pandas</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;ident_virgule.csv&quot;</span><span class="p">)</span>
+</code></pre></div>
+<p>Une fois le code saisi, enregistrer le fichier contenant ce code dans le même répertoire que le fichier "ident_virgule.csv"</p>
+<hr />
+<p>Le code ci-dessus est très simple :</p>
+<ul>
+<li>Avec la première ligne, nous importons la bibliothèque pandas afin de pouvoir l'utiliser</li>
+<li>À la deuxième ligne, nous créons une variable "iden" qui va contenir les données présentes dans le fichier "ident_virgule.csv"</li>
+</ul>
+<h3 id="activite-184">Activité 18.4</h3>
+<p>Dans spyder cliquez sur le triangle vert qui permet d'exécuter le programme que vous venez de saisir. Placez ensuite le curseur de la souris dans la console de spyder juste à côté d'un "In [X]" (avec X égal à 1, 2, 3..., selon les cas, dans l'exemple ci-dessous nous avons "In [3]"). Tapez alors "iden"</p>
+<p>Vous devriez voir apparaitre les données contenues dans la variable "iden" rangées sous la forme d'un tableau, un peu comme ce que nous obtenions en ouvrant le fichier "ident_virgule.csv" avec un tableur.</p>
+<p><img alt="" src="/img/iden.png" /></p>
+<hr />
+<p>Vous avez peut-être remarqué qu'une colonne a été ajoutée par rapport à ce que nous obtenions avec le tableur :</p>
+<p><img alt="" src="/img/idenb.png" /></p>
+<p>Les nombres présents dans cette colonne sont appelés des index. Chaque ligne du tableau a un index (première ligne : index 0, deuxième ligne index 1...)</p>
+<p><strong>ATTENTION</strong> : les index commencent à 0 et pas à 1</p>
+<p>Les colonnes possèdes également des index, dans notre exemple ces index correspondent au "nom" (index de la première colonne), au "prenom" (index de la deuxième colonne) et à "date_naissance" (index de la troisième colonne)</p>
+<p>**En résuméùù : les lignes possèdent des index (0,1,2..), les colonnes possèdent aussi des index ("nom", "prenom",...)</p>
+<p>Il est possible de récupérer certaines données du tableau, par exemple, certaines lignes, certaines colonnes ou bien encore des valeurs uniques. Pour cela, il suffit d'utiliser l'instruction "loc" avec les index des lignes et les index des colonnes. Le principe de fonctionnement de "loc" est relativement simple puisque l'on aura une instruction de la forme <code>loc[index_ligne,index_colonne]</code></p>
+<h3 id="activite-185">Activité 18.5</h3>
+<p>Testez le programme suivant :</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pandas</span>
+<span class="n">iden</span><span class="o">=</span><span class="n">pandas</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;ident_virgule.csv&quot;</span><span class="p">)</span>
+<span class="n">info</span><span class="o">=</span><span class="n">iden</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="s1">&#39;prenom&#39;</span><span class="p">]</span>
+</code></pre></div>
+<p>Vérifiez que la variable "info" contient bien le prénom "christophe"</p>
+<hr />
+<h3 id="activite-186">Activité 18.6</h3>
+<p>Modifiez le programme de l'activité 5 pour que la variable info contienne "12/06/1978"</p>
+<hr />
+<p>Il est possible de récupérer toutes les colonnes d'une ligne particulière, cette fois en remplaçant la partie "index_colonne" de "loc" par ":"</p>
+<h3 id="activite-187">Activité 18.7</h3>
+<p>Testez le programme suivant :</p>
+<p><div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pandas</span>
+<span class="n">iden</span><span class="o">=</span><span class="n">pandas</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;ident_virgule.csv&quot;</span><span class="p">)</span>
+<span class="n">info</span><span class="o">=</span><span class="n">iden</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span><span class="s1">&#39;nom&#39;</span><span class="p">]</span>
+</code></pre></div>
+Vérifiez que la variable "info" contient bien toutes les données de la colonne d'index "nom", autrement dit, tous les noms</p>
+<hr />
+<p>Il est possible de récupérer toutes les colonnes d'une ligne particulière, cette fois en remplaçant la partie "index_colonne" de "loc" par ":"</p>
+<h3 id="activite-188">Activité 18.8</h3>
+<p>Testez le programme suivant :</p>
+<p><div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pandas</span>
+<span class="n">iden</span><span class="o">=</span><span class="n">pandas</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;ident_virgule.csv&quot;</span><span class="p">)</span>
+<span class="n">info</span><span class="o">=</span><span class="n">iden</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">2</span><span class="p">,:]</span>
+</code></pre></div>
+Vérifiez que la variable "info" contient bien toutes les données de la dernière ligne (index 2)</p>
+<hr />
+<p>Il est aussi possible de récupérer seulement certaines lignes et certaines colonnes en utilisant la notation suivante :</p>
+<p><code>loc[[index_ligne_1,index_ligne_2,...],[index_colonne_1,index_colonne_2,...]]</code></p>
+<h3 id="activite-189">Activité 18.9</h3>
+<p>Testez le programme suivant :</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pandas</span>
+<span class="n">iden</span><span class="o">=</span><span class="n">pandas</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;ident_virgule.csv&quot;</span><span class="p">)</span>
+<span class="n">info</span><span class="o">=</span><span class="n">iden</span><span class="o">.</span><span class="n">loc</span><span class="p">[[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">],[</span><span class="s1">&#39;nom&#39;</span><span class="p">,</span><span class="s1">&#39;date_naissance&#39;</span><span class="p">]]</span>
+</code></pre></div>
+<p>Vérifiez que la variable "info" contient bien un tableau avec uniquement les colonnes "nom" et "date_naissance" de la première ligne (index 0) et de la deuxième ligne (index 1).</p>
+<hr />
+<p>Afin d'avoir des exemples plus complexes à traiter, dans la suite, nous allons travailler sur les données contenues dans le fichier <a href="/asset/villes_virgule.csv">ville_virgule.csv</a>.</p>
+<h3 id="activite-1810">Activité 18.10</h3>
+<p>Testez le programme suivant :</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pandas</span>
+<span class="n">info_villes</span><span class="o">=</span><span class="n">pandas</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;villes_virgule.csv&quot;</span><span class="p">)</span>
+</code></pre></div>
+<p>Vérifiez que la variable "info_villes" contient bien les données contenues dans le fichier <a href="/asset/villes_virgule.csv">ville_virgule.csv</a></p>
+<p>Comme vous pouvez le constater, il manque des données dans le tableau qui s'affiche dans la console spyder (les données manquantes sont symbolisées par des ...), en effet, le tableau contient trop données pour qu'il soit entièrement affiché dans la console spyder. Heureusement, il existe une solution :</p>
+<p>Dans spyder, dans la fenêtre située juste au-dessus de la console, vous allez trouver un onglet "Explorateur de variables". Cliquez sur cet onglet, vous devriez alors obtenir ceci :</p>
+<p><img alt="" src="/img/info_villes.png" /></p>
+<p>Double-cliquez sur "info_villes" et vous devriez alors voir apparaitre une nouvelle fenêtre qui contiendra un tableau avec l'ensemble des données.</p>
+<hr />
+<p>En explorant le tableau, vous devriez, notamment dans les colonnes l'altitude mini et maxi, voir apparaitre un étrange "nan" pour les dernières villes du tableau. "nan" signifie "not a number", ici, cela veut tout simplement dire que certaines données sont manquantes.</p>
+<p>Nous allons maintenant introduire des conditions dans la sélection des villes. Imaginez par exemple que vous désirez obtenir un tableau contenant toutes les villes qui ont une altitude minimum supérieure à 1500 m :</p>
+<h3 id="activite-1811">Activité 18.11</h3>
+<p>Analysez et testez le programme suivant :</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pandas</span>
+<span class="n">info_villes</span><span class="o">=</span><span class="n">pandas</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;villes_virgule.csv&quot;</span><span class="p">)</span>
+<span class="n">nom_alt</span><span class="o">=</span><span class="n">info_villes</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">info_villes</span><span class="p">[</span><span class="s2">&quot;alt_min&quot;</span><span class="p">]</span><span class="o">&gt;</span><span class="mi">1500</span><span class="p">,[</span><span class="s2">&quot;nom&quot;</span><span class="p">,</span><span class="s2">&quot;alt_min&quot;</span><span class="p">]]</span>
+</code></pre></div>
+<hr />
+<p>Dans le "loc", l'expression "info_villes["alt_min"]&gt;1500" est bien avant la virgule, elle concerne donc les index des lignes du tableau. On sélectionnera uniquement les lignes qui auront la valeur du descripteur "alt_min" supérieure à 1500. Nous allons donc bien sélectionner les villes qui ont une altitude minimum supérieure à 1500 m</p>
+<h3 id="activite-1812">Activité 18.12</h3>
+<p>En vous inspirant de ce qui a été fait au "À faire vous-même 11", écrivez un programme qui permettra d'avoir les villes qui ont une densité d'habitant inférieure à 50 (dans le tableau ainsi créé, on aura 3 colonnes : le nom de la ville, la densité de la population et l'altitude minimum)</p>
+<hr />
+<p>Il est possible de combiner plusieurs facteurs de sélection en utilisant un "et"("&amp;") ou un "ou"("|").</p>
+<h3 id="activite-1813">Activité 18.13</h3>
+<p>Analysez et testez le programme suivant :</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pandas</span>
+<span class="n">info_villes</span><span class="o">=</span><span class="n">pandas</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;villes_virgule.csv&quot;</span><span class="p">)</span>
+<span class="n">nom_alt</span><span class="o">=</span><span class="n">info_villes</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">info_villes</span><span class="p">[</span><span class="s2">&quot;alt_min&quot;</span><span class="p">]</span><span class="o">&gt;</span><span class="mi">1500</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">info_villes</span><span class="p">[</span><span class="s2">&quot;dens&quot;</span><span class="p">]</span><span class="o">&gt;</span><span class="mi">50</span><span class="p">),[</span><span class="s2">&quot;nom&quot;</span><span class="p">,</span><span class="s2">&quot;dens&quot;</span><span class="p">,</span><span class="s2">&quot;alt_min&quot;</span><span class="p">]]</span>
+</code></pre></div>
+<p>Vous devriez constater qu'il y a, en France, une seule ville avec une densité de population supérieure à 50 et une altitude minimum supérieure à 1500 m.</p>
+<hr />
+<p>Il est aussi possible d'effectuer des calculs sur des colonnes, par exemple des moyennes. Il suffit d'utiliser l'instruction "mean" pour effectuer une moyenne :</p>
+<h3 id="activite-1814">Activité 18.14</h3>
+<p>Analysez et testez le programme suivant :</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pandas</span>
+<span class="n">info_villes</span><span class="o">=</span><span class="n">pandas</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;villes_virgule.csv&quot;</span><span class="p">)</span>
+<span class="n">moyenne_alt_min</span><span class="o">=</span><span class="n">info_villes</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span><span class="s2">&quot;alt_min&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+</code></pre></div>
+<p>Vous devriez constater que l'altitude minimum moyenne est de 193 m en France. Je rappelle que dans <code>loc[:,"alt_min"]</code> le ":" signifie que l'on considère toutes les lignes du tableau. De plus le "alt_min" que le calcul de la moyenne porte bien sur les données du descripteur "alt_min".</p>
+<hr />
+<h3 id="activite-1815">Activité 18.15</h3>
+<p>Écrivez un programme permettant de calculer le nombre moyen d'habitants en 2012</p>
+<hr />
+<p>Pour l'instant nous avons calculé une moyenne sur l'ensemble des lignes, il est aussi possible d'imposer une condition sur les lignes qui seront utilisées pour le calcul.</p>
+<h3 id="activite-1816">Activité 18.16</h3>
+<p>Analysez et testez le programme suivant :</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pandas</span>
+<span class="n">info_villes</span><span class="o">=</span><span class="n">pandas</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;villes_virgule.csv&quot;</span><span class="p">)</span>
+<span class="n">nbe_hab</span><span class="o">=</span><span class="n">info_villes</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">info_villes</span><span class="p">[</span><span class="s2">&quot;alt_min&quot;</span><span class="p">]</span><span class="o">&gt;</span><span class="mi">1500</span><span class="p">,</span><span class="s2">&quot;nb_hab_2012&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">nbe_hab</span><span class="p">)</span>
+</code></pre></div>
+<p>Vous devriez constater que les villes ayant une altitude minimum supérieure à 1500 m avaient en moyenne 350 habitants en 2012.</p>
+<hr />
+<p>Il est aussi possible de trier le tableau en fonction des valeurs d'un descripteur. Il suffit d'utiliser l'instruction "sort_values"</p>
+<h3 id="activite-1817">Activité 18.17</h3>
+<p>Analysez et testez le programme suivant :</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pandas</span>
+<span class="n">info_villes</span><span class="o">=</span><span class="n">pandas</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;villes_virgule.csv&quot;</span><span class="p">)</span>
+<span class="n">tri_alt_min</span><span class="o">=</span><span class="n">info_villes</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;alt_min&quot;</span><span class="p">])</span>
+</code></pre></div>
+<p>Vous devriez obtenir un nouveau tableau de données "tri_alt_min" trié dans l'ordre croissant des altitudes minimums. Quelle est la ville ayant l'altitude minimum la plus faible de France ?</p>
+<hr />
+<p>Il est aussi possible de trier par ordre décroissant en ajoutant "ascending=False" :</p>
+<h3 id="activite-1818">Activité 18.18</h3>
+<p>Analysez et testez le programme suivant :</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pandas</span>
+<span class="n">info_villes</span><span class="o">=</span><span class="n">pandas</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;villes_virgule.csv&quot;</span><span class="p">)</span>
+<span class="n">tri_alt_min</span><span class="o">=</span><span class="n">info_villes</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;alt_min&quot;</span><span class="p">],</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</code></pre></div>
+<p>Quelle est la ville ayant l'altitude minimum la plus importante de France ?</p>
+<hr />
+<h3 id="activite-1819">Activité 18.19</h3>
+<p>Écrivez un programme permettant de répondre à la question suivante : quelle est la ville ayant la densité de population la plus forte ?</p>
+<hr />
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Pied de page">
+      
+        
+        <a href="../r17/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Résumé 17" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Précédent
+              </span>
+              Résumé 17
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../a19/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Activité 19 : le cloud" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Suivant
+              </span>
+              Activité 19 : le cloud
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copier dans le presse-papier", "clipboard.copied": "Copi\u00e9 dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Rechercher", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.term.missing": "Non trouv\u00e9", "select.version.title": "S\u00e9lectionner la version"}, "search": "../assets/javascripts/workers/search.bd0b6b67.min.js"}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.b88e97c5.min.js"></script>
+      
+        <script src="../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
