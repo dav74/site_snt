@@ -1336,7 +1336,9 @@
 <p>Un fichier "image" issu d'un appareil photo numérique contient plus qu'une simple image. On trouve en effet des informations sur l'image elle-même (définition, résolution...) mais aussi des informations sur la prise de vue (date et heure, lieu...). Cette spécification des fichiers "image" d'un appareil photo numérique s'appelle EXIF (EXchangeable Image file Format). Ces données contenues dans un fichier "image" d'un appareil photo s'appellent des métadonnées.</p>
 <p>La plupart des logiciels de retouche photo permettent de lire ces métadonnées. Nous n'allons pas utiliser ce type de logiciel, nous allons plutôt écrire un petit programme Python (plus précisément, nous utiliserons la bibliothèque Python "PIL").</p>
 <h3 id="activite-291">Activité 29.1</h3>
-<p>Créez un dossier nommé "exif", enregistrez l'image suivante : <a href="/asset/photo.jpg">photo.jpg</a> (clic droit, "Enregistrer sous") dans ce dossier "exif".</p>
+<p>Créez un dossier nommé "exif", enregistrez l'image suivante :</p>
+<p><img alt="photo.jpg" src="../asset/photo.jpg" /> </p>
+<p>(pour enregistrer l'image : clic droit, "Enregistrer l'image sous"). Eneristrez l'image dans le dossier "exif".</p>
 <hr />
 <h3 id="activite-292">Activité 29.2</h3>
 <p>En utilisant le logiciel Spyder3, saisissez et testez le programme suivant (il faudra enregistrer le fichier contenant ce programme dans le dossier "exif" ) :</p>
@@ -1345,7 +1347,7 @@
 <span class="n">exif_data</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">_getexif</span><span class="p">()</span>
 </code></pre></div>
 Après avoir exécuté le programme, utilisez l'"Explorateur de variables" de Spyder, pour analyser le contenu de la variable "exif_data", vous devriez avoir quelque chose qui ressemble à cela :</p>
-<p><img alt="" src="/img/exif.png" /></p>
+<p><img alt="" src="../img/exif.png" /></p>
 <hr />
 <h3 id="activite-293">Activité 29.3</h3>
 <p>Comme vous pouvez le constater, nous avons un système clé:valeur (à chaque clé correspond une valeur). Les clés sont "codées" par des nombres, pour comprendre la signification de ces nombres, consultez le site <a href="http://www.exiv2.org/tags.html">http://www.exiv2.org/tags.html</a></p>
@@ -1357,7 +1359,7 @@ Après avoir exécuté le programme, utilisez l'"Explorateur de variables" de Sp
 <li>la date et l'heure de la prise de vue</li>
 </ul>
 <p>La clé "34853" n'est pas tout le temps présente puisqu'il s'agit des coordonnées (latitude, longitude) de la prise de vue, il faut donc que l'appareil photo intègre un GPS (ce qui est le cas des smartphones), si nous double-cliquons sur cette clé "34853", nous obtenons les informations suivantes :</p>
-<p><img alt="" src="/img/exif_gps.png" /></p>
+<p><img alt="" src="../img/exif_gps.png" /></p>
 <p>Les lignes 1, 2, 3 et 4 vont particulièrement nous intéresser :</p>
 <ul>
 <li>ligne 1 : précise que nous sommes dans l'hémisphère Nord</li>
