@@ -1602,13 +1602,13 @@ Vérifiez que la variable "info" contient bien toutes les données de la derniè
 </code></pre></div>
 <p>Vérifiez que la variable "info" contient bien un tableau avec uniquement les colonnes "nom" et "date_naissance" de la première ligne (index 0) et de la deuxième ligne (index 1).</p>
 <hr />
-<p>Afin d'avoir des exemples plus complexes à traiter, dans la suite, nous allons travailler sur les données contenues dans le fichier <a href="/asset/villes_virgule.csv">ville_virgule.csv</a>.</p>
+<p>Afin d'avoir des exemples plus complexes à traiter, dans la suite, nous allons travailler sur les données contenues dans le fichier <a href="../asset/villes_virgule.csv">ville_virgule.csv</a>.</p>
 <h3 id="activite-1810">Activité 18.10</h3>
 <p>Testez le programme suivant :</p>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pandas</span>
 <span class="n">info_villes</span><span class="o">=</span><span class="n">pandas</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;villes_virgule.csv&quot;</span><span class="p">)</span>
 </code></pre></div>
-<p>Vérifiez que la variable "info_villes" contient bien les données contenues dans le fichier <a href="/asset/villes_virgule.csv">ville_virgule.csv</a></p>
+<p>Vérifiez que la variable "info_villes" contient bien les données contenues dans le fichier <a href="../asset/villes_virgule.csv">ville_virgule.csv</a></p>
 <p>Comme vous pouvez le constater, il manque des données dans le tableau qui s'affiche dans la console spyder (les données manquantes sont symbolisées par des ...), en effet, le tableau contient trop données pour qu'il soit entièrement affiché dans la console spyder. Heureusement, il existe une solution :</p>
 <p>Dans spyder, dans la fenêtre située juste au-dessus de la console, vous allez trouver un onglet "Explorateur de variables". Cliquez sur cet onglet, vous devriez alors obtenir ceci :</p>
 <p><img alt="" src="../img/info_villes.png" /></p>
